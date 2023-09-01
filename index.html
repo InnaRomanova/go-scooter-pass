@@ -8,7 +8,9 @@
     <!-- <link rel="stylesheet" href="/fonts/font.css"> -->
     <link href="https://db.onlinewebfonts.com/c/23a02e8af5ef33a9b496dd524401550f?family=YS+Text+Regular+Regular"
         rel="stylesheet">
-
+    <link href="https://yastatic.net/s3/home/fonts/ys/4/text-black.woff" rel="stylesheet">
+    <link href="https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff" rel="stylesheet">
+    <link href="https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff" rel="stylesheet">
     <title>go-scooter-pas</title>
 </head>
 
@@ -76,13 +78,24 @@
                     </p>
                 </div>
                 <div class="access__image-block">
-                    <img src="./images/1.png" alt="картинка" class="access__image" />
-                    <img src="./images/2.png" alt="картинка" class="access__image" />
-                    <img src="./images/3.png" alt="картинка" class="access__image" />
-                    <img src="./images/4.png" alt="картинка" class="access__image" />
-                    <img src="./images/iconAccess1.svg" alt="картинка" class="access__icon access__icon1" />
-                    <img src="./images/iconAccess2.png" alt="картинка" class="access__icon access__icon2" />
-                    <img src="./images/iconAccess3.png" alt="картинка" class="access__icon access__icon3" />
+                    <div class="access__edit-image">
+                        <img src="./images/1.png" alt="картинка" class="access__image" />
+                        <img src="./images/iconAccess1.svg" alt="картинка" class="access__icon access__icon1" />
+                    </div>
+                    <div class="access__image2">
+                        <img src="./images/2.png" alt="картинка" class="access__image  access__image_one" />
+                        <img src="./images/iconAccess2.png" alt="картинка" class="access__icon access__icon2" />
+                    </div>
+                    <img src="./images/3.png" alt="картинка" class="access__image access__image_three" />
+                    <div class="access__image2">
+                        <img src="./images/4.png" alt="картинка" class="access__image access__image_four" />
+                        <img src="./images/iconAccess3.png" alt="картинка" class="access__icon access__icon3" />
+                    </div>
+                    <!-- <div class="access__image2">
+                        <img src="./images/iconAccess1.svg" alt="картинка" class="access__icon access__icon1" />
+                        <img src="./images/iconAccess2.png" alt="картинка" class="access__icon access__icon2" />
+                        <img src="./images/iconAccess3.png" alt="картинка" class="access__icon access__icon3" />
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -97,14 +110,15 @@
                     </p>
 
                 </div>
-                <div class="purchase__content">
-                   
+                <div class="purchase__content purchase__content_disable">
+
                     <img class="purchase__icon" src="./images/purchase-scooter-shaiba.svg" alt="картинка">
-                  <img class="purchase__image" src="./images/purchase-scooter-svg.png" alt="картинка">
+                    <img class="purchase__image" src="./images/purchase-scooter-svg.png" alt="картинка">
                 </div>
-                    <div class="purchase__content">
-                        <img class="purchase__image-soobchestvo" src="./images/purchase-scooter-soobchestvo.svg" alt="картинка">
-                    </div>
+                <div class="purchase__content">
+                    <img class="purchase__image-soobchestvo" src="./images/purchase-scooter-soobchestvo.svg"
+                        alt="картинка">
+                </div>
                 <div class="purchase__content">
                     <h2 class="access__title">80  % наших пользователей уже в клубе и экономят на поездках</h2>
                     <p class="access__text">Присоединяйтесь — опция начнёт действовать в начале сезона–2024.
@@ -112,32 +126,34 @@
                     </p>
                     <button class="purchase__button">Хочу абонемент</button>
                 </div>
-               
+
             </div>
         </section>
+    </main>
 
         <footer class="footer">
             <div class="footer__container">
                 <span class="footer__text">
-                    Доп. опция «Абонемент на самокаты» на 8 месяцев (240 дней) активируется автоматически 
-                    с момента старта сезона 2024 г. самокатов Яндекс Go, далее предусмотрено автопродление доп.опции за 
-                    399 руб./мес. Сертификат на доп.опцию «Абонемент на самокаты» на 8 месяцев оформляется на условиях 
-                    документа 
-                    <a class="footer__link" href="/legal/scooters_seasonpass">/legal/scooters_seasonpass.</a> 
-                    Доп.опция доступна пользователям с активной подпиской 
-                    (условия подписки: <a class="footer__link" href="yandex.ru/legal/yandex_plus_conditions">yandex.ru/legal/yandex_plus_conditions</a>), 
-                    есть ограничения, 
-                    подробнее: <a class="footer__link" href="yandex.ru/legal/yandex_plus_opzii_list">yandex.ru/legal/yandex_plus_opzii_list.</a> 
-                    В случае отсутствия у пользователя активной подписки на 
-                    дату активации доп.опции, пользователю предоставляется 7 дней подписки Яндекс Плюс бесплатно, 
-                    далее автопродление — 299 руб./мес. Электросамокаты Яндекс Go — сервис аренды электросамокатов на условиях: 
+                    Доп. опция «Абонемент на самокаты» на 8 месяцев (240 дней) активируется автоматически
+                    с момента старта сезона 2024 г. самокатов Яндекс Go, далее предусмотрено автопродление доп.опции за
+                    399 руб./мес. Сертификат на доп.опцию «Абонемент на самокаты» на 8 месяцев оформляется на условиях
+                    документа
+                    <a class="footer__link" href="/legal/scooters_seasonpass">/legal/scooters_seasonpass.</a>
+                    Доп.опция доступна пользователям с активной подпиской
+                    (условия подписки: <a class="footer__link"
+                        href="yandex.ru/legal/yandex_plus_conditions">yandex.ru/legal/yandex_plus_conditions</a>),
+                    есть ограничения,
+                    подробнее: <a class="footer__link"
+                        href="yandex.ru/legal/yandex_plus_opzii_list">yandex.ru/legal/yandex_plus_opzii_list.</a>
+                    В случае отсутствия у пользователя активной подписки на
+                    дату активации доп.опции, пользователю предоставляется 7 дней подписки Яндекс Плюс бесплатно,
+                    далее автопродление — 299 руб./мес. Электросамокаты Яндекс Go — сервис аренды электросамокатов на
+                    условиях:
                     <a class="footer__link" href="clck.ru/gwDGn">clck.ru/gwDGn.</a> 0+
                 </span>
             </div>
         </footer>
 
-    </main>
-    <footer class="footer"></footer>
 </body>
 
 </html>

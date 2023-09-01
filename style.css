@@ -32,8 +32,8 @@ body {
 .header__content {
     margin: 0;
     padding: 0;
-    max-width: 420px;
-
+    width: 420px;
+    position: relative;
 }
 
 .header__velo {
@@ -91,10 +91,13 @@ body {
 }
 
 .header__image {
-    margin: 270px 200px 0 0;
+    position: absolute;
+    margin: 0;
     padding: 0;
     width: 207px;
     height: 207px;
+    left: 770px;
+    bottom: 391px;
 }
 
 
@@ -180,7 +183,7 @@ body {
 }
 
 .access__text {
-    max-width: 442px;
+    width: 442px;
     margin: 0;
     padding: 0;
     font-size: 24px;
@@ -196,7 +199,7 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 7px;
+    row-gap: 2px;
     column-gap: 15px;
     position: relative;
 }
@@ -206,17 +209,18 @@ body {
     padding: 0;
     max-width: 471px;
     min-height: 471px;
+    object-fit: contain;
 }
 
-.access__image:nth-child(2) {
+.access__image_one {
     margin-top: -210px;
 }
 
-.access__image:nth-child(3) {
+.access__image_three {
     margin-left: -17px;
 }
 
-.access__image:nth-child(4) {
+.access__image_four {
     margin-top: -210px;
     margin-left: -16px;
 }
@@ -230,19 +234,22 @@ body {
 .access__icon1 {
     width: 320px;
     height: 320px;
-    margin-left: -146px;
     object-fit: none;
-    margin-top: 3px;
+    position: absolute;
+    top: 3px;
+    left: -148px;
 }
 
 .access__icon2 {
-    margin-left: 812px;
-    margin-top: -297px;
+    position: absolute;
+    top: -296px;
+    right: -133px;
 }
 
 .access__icon3 {
-    margin-left: 588px;
-    margin-top: 410px;
+    position: absolute;
+    right: -94px;
+    bottom: 94px;
 }
 
 .purchase {
@@ -268,7 +275,7 @@ body {
 .purchase__content {
     margin: 0;
     padding: 0;
-    max-width: 419px;
+    width: 419px;
 }
 
 .purchase__title {
@@ -292,9 +299,7 @@ body {
     position: sticky;
 }
 
-.purchase__icon {
- 
-}
+.purchase__icon {}
 
 .purchase__image-soobchestvo {
     margin: -63px 0 0 -123px;
@@ -323,7 +328,7 @@ body {
 }
 
 .footer {
-    margin: 0;
+    margin: 0 262px;
     padding: 104px 0 0;
 }
 
@@ -347,4 +352,203 @@ body {
     margin: 0;
     padding: 0;
     color: rgba(197, 197, 197, 1);
+}
+
+@media screen and (max-width: 1330px) {
+    .header {
+        background-position-x: 175px;
+        background-position-y: 45px;
+    }
+
+    .header__container {
+        padding-top: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+        /* flex-direction: column; */
+    }
+
+    .header__content {
+        margin: 0;
+        padding: 0;
+        width: 311px;
+    }
+
+    .header__image {
+        width: 207px;
+        height: 207px;
+        position: absolute;
+        left: 484px;
+        bottom: 294px;
+    }
+
+    .page {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .access__image-block {
+        justify-content: center;
+    }
+
+    .access__image {
+        max-width: 100%;
+    }
+
+    .access__icon2 {
+        position: absolute;
+        top: -270px;
+        right: 34px;
+    }
+
+    .access__icon3 {
+        position: absolute;
+        right: 103px;
+        bottom: 94px;
+    }
+
+    .footer {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1033px) {
+    .header {
+        height: 936px;
+        background-position-x: 0;
+        background-position-y: 392px;
+        background-size: contain;
+    }
+
+    .header__container {
+        flex-direction: column;
+    }
+
+    .header__logo {
+        width: 112px;
+        height: 32px;
+    }
+
+    .header__content {
+        width: 100%;
+    }
+
+
+    .header__title {
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+
+    .header__text {
+        font-size: 18px;
+        line-height: 23px;
+        width: 100%;
+    }
+
+    .header__image {
+        width: 207px;
+        height: 207px;
+        position: absolute;
+        left: 225px;
+        bottom: 64px;
+    }
+
+    .klub__title {
+        font-size: 32px;
+        line-height: 32px;
+        width: 100%;
+    }
+
+    .klub__text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .access__image-block {
+        grid-template-columns: none;
+    }
+
+    .access__title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .access__text {
+        font-size: 16px;
+        line-height: 19px;
+        width: 100%;
+    }
+
+    .access__image_one {
+        margin-top: 0;
+    }
+
+    .access__image_four {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .access__icon1 {
+        display: none;
+    }
+
+    .access__icon2 {
+        top: -54px;
+        right: 17px;
+    }
+
+    .access__icon3 {
+        display: none;
+    }
+
+    .purchase__container {
+        padding-top: 72px;
+        grid-template-columns: none;
+        column-gap: 0;
+        row-gap: 0;
+        justify-content: center;
+    }
+
+    .purchase__content_disable {
+        display: none;
+    }
+
+    .purchase__content {
+        width: 100%;
+    }
+
+    .purchase__image-soobchestvo {
+        height: 304px;
+        margin: 0px 0 0 37px;
+        padding: 0;
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        height: 710px;
+        background-position-y: 393px;
+        width: 100%;
+        background-size: contain;
+    }
+
+    .header__container {
+        padding-top: 32px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .header__image {
+        width: 84px;
+        height: 84px;
+        left: 117px;
+        bottom: 308px;
+    }
 }
