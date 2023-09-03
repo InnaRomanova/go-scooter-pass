@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- <link rel="stylesheet" href="/fonts/font.css"> -->
-    <link
+    <!-- <link
       href="https://db.onlinewebfonts.com/c/23a02e8af5ef33a9b496dd524401550f?family=YS+Text+Regular+Regular"
       rel="stylesheet"
-    />
+    /> -->
     <link
       href="https://yastatic.net/s3/home/fonts/ys/4/text-black.woff"
       rel="stylesheet"
@@ -39,11 +39,14 @@
           </p>
           <button class="header__button">Стать частью клуба</button>
         </div>
-        <img
-          class="header__image"
-          src="./images/ellipsVelo.svg"
-          alt="картинка"
-        />
+        <div class="header__block-image">
+          <img class="header__velo" src="./images/velo.svg" alt="картинка" />
+          <img
+            class="header__image"
+            src="./images/ellipsVelo.svg"
+            alt="картинка"
+          />
+        </div>
       </div>
     </header>
 
@@ -113,7 +116,11 @@
           </div>
           <div class="access__image-block">
             <div class="access__edit-image">
-              <img src="./images/1.png" alt="картинка" class="access__image" />
+              <img
+                src="./images/1.png"
+                alt="картинка"
+                class="access__image access__image_icon"
+              />
               <img
                 src="./images/iconAccess1.svg"
                 alt="картинка"
@@ -125,7 +132,7 @@
               <img
                 src="./images/2.png"
                 alt="картинка"
-                class="access__image access__image_one"
+                class="access__image access__image_icon access__image_one"
               />
               <img
                 src="./images/iconAccess2.png"
@@ -136,13 +143,13 @@
             <img
               src="./images/3.png"
               alt="картинка"
-              class="access__image access__image_three"
+              class="access__image access__image_icon access__image_three"
             />
             <div class="access__image2">
               <img
                 src="./images/4.png"
                 alt="картинка"
-                class="access__image access__image_four"
+                class="access__image access__image_icon access__image_four"
               />
               <img
                 src="./images/iconAccess3.png"
@@ -150,12 +157,13 @@
                 class="access__icon access__icon3"
               />
             </div>
-          
-          <div class="access__buttons">
-            <button class="access__left"></button>
-            <button class="access__rigth"></button>
+
+            <div class="access__buttons">
+              <button class="access__button access__left"></button>
+              <button class="access__button access__rigth"></button>
+            </div>
           </div>
-        </div></div>
+        </div>
       </section>
 
       <section class="purchase">
