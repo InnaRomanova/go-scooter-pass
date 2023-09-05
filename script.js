@@ -1,8 +1,8 @@
 //Слайдер
 const slider = document.querySelector(".access__image-block");
 const sliders = document.querySelectorAll(".access__image_icon");
-const nextButton = document.querySelectorAll(".access__rigth")[1];
-const prevButton = document.querySelectorAll(".access__left")[1];
+const nextButton = document.querySelector(".access__rigth");
+const prevButton = document.querySelector(".access__left");
 
 //const slides = Array.from(slider.querySelectorAll(".access__image"));
 const slides = document.querySelector(".slides");
@@ -35,17 +35,7 @@ function showNextSlide() {
 }
 
 // Функция для обновления отображения слайдера
-// function updateSlider() {
-//   if (window.innerWidth <= 1033) {
-//     sliders.forEach((slide, index) => {
-//       if (index === slideIndex) {
-//         slide.style.display = "block";
-//       } else {
-//         slide.style.display = "none";
-//       }
-//     });
-//   }
-// }
+
 function updateSlider() {
   if (window.innerWidth > 1033) {
     // показываем все слайды
@@ -60,41 +50,6 @@ function updateSlider() {
         value.style.display = "none";
       }
     });
-    /*
-    // показываем только текущий слайд
-    for (let i = 0; i < slides.length; i++) {
-      if (i === slideIndex) {
-        console.log(slides[i]);
-        slides[i].style.display = "block";
-      } else {
-        slides[i].style.display = "none";
-      }
-    }
-    */
+ 
   }
 }
-// function updateSlider() {
-//   if (window.innerWidth >= 1033) {
-//     // показываем все слайды
-//     slides.style.display = "flex";
-//   } else {
-//     // показываем только текущий слайд
-//     sliders.forEach((slide, index) => {
-//       if (index === slideIndex) {
-//         slide.style.display = "block";
-//       } else {
-//         slide.style.display = "none";
-//       }
-//     });
-// for (let i = 0; i < slides.length; i++) {
-//   if (i === slideIndex) {
-//     slides[i].style.display = "block";
-//   } else {
-//     slides[i].style.display = "none";
-//   }
-// }
-//   }
-// }
-
-// Инициализация слайдера
-//updateSlider();
